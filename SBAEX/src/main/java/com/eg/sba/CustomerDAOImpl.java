@@ -25,4 +25,12 @@ public class CustomerDAOImpl implements CustomerDAO {
 		
 	}
 
+	@Override
+	public Customer deleteCustomer(Customer cust) {
+		
+		mTemplate.remove(cust);
+		return cust;
+		
+	}
+
 }

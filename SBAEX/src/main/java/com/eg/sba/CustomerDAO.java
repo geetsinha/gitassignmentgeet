@@ -8,4 +8,6 @@ public interface CustomerDAO {
 	
 	public Customer createCustomer(Customer cust);
 
+	public Customer deleteCustomer(Customer cust);
+
 }

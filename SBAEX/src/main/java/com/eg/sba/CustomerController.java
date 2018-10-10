@@ -36,4 +36,11 @@ public class CustomerController {
 		
 	}
 
+	@RequestMapping(value="/delete" , method=RequestMethod.DELETE)
+	public Customer deleteCustomer(@RequestBody Customer cust)
+	{
+		return cdao.deleteCustomer(cust);
+		
+	}
+
 }
